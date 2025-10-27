@@ -1,22 +1,3 @@
-"""
-=============================================================================
-SERVER (Device 2) - DES Secure Bidirectional Communication
-=============================================================================
-Program ini berfungsi sebagai server yang dapat:
-1. Menerima dan mendekripsi pesan terenkripsi dari client
-2. Mengirim pesan terenkripsi ke client
-3. Komunikasi 2-arah (bidirectional) dengan enkripsi end-to-end
-4. Graceful shutdown dengan schedule request
-
-Protocol: TCP Socket
-Encryption: DES (Data Encryption Standard)
-Encoding: Base64 dengan marker custom [DES]...[/DES]
-
-Author: Tugas 2 - Kriptografi
-Date: October 27, 2025
-=============================================================================
-"""
-
 import socket
 import json
 import time
@@ -251,3 +232,4 @@ if __name__ == "__main__":
     input("\nPress Enter to start server...")
     
     start_server(HOST, PORT, SHARED_KEY)
+
