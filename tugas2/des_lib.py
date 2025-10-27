@@ -1,19 +1,3 @@
-"""
-=============================================================================
-DES (Data Encryption Standard) Library
-=============================================================================
-Library untuk implementasi algoritma DES encryption/decryption.
-Berisi fungsi-fungsi untuk:
-- Konversi data (string, bits, hex, base64)
-- Permutasi dan substitusi (S-boxes)
-- Key scheduling (generate 16 subkeys)
-- Enkripsi dan dekripsi DES
-
-Author: Tugas 2 - Kriptografi
-Date: October 27, 2025
-=============================================================================
-"""
-
 # Tabel Permutasi Initial Permutation (IP)
 IP = [58, 50, 42, 34, 26, 18, 10, 2,
       60, 52, 44, 36, 28, 20, 12, 4,
@@ -415,3 +399,4 @@ def decrypt_message(ciphertext_bits, key):
     decrypted_text = unpad_text(decrypted_text_padded)
     
     return decrypted_text
+
