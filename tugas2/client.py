@@ -1,21 +1,3 @@
-"""
-=============================================================================
-CLIENT (Device 1) - DES Secure Bidirectional Communication
-=============================================================================
-Program ini berfungsi sebagai client yang dapat:
-1. Mengirim pesan terenkripsi menggunakan DES ke server
-2. Menerima dan mendekripsi pesan dari server
-3. Komunikasi 2-arah (bidirectional) dengan enkripsi end-to-end
-
-Protocol: TCP Socket
-Encryption: DES (Data Encryption Standard)
-Encoding: Base64 dengan marker custom [DES]...[/DES]
-
-Author: Tugas 2 - Kriptografi
-Date: October 27, 2025
-=============================================================================
-"""
-
 import socket
 import json
 import time
@@ -148,3 +130,4 @@ if __name__ == "__main__":
     input("\nPress Enter to connect...")
     
     bidirectional_chat(HOST, PORT, SHARED_KEY)
+
