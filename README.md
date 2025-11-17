@@ -7,8 +7,3 @@ Kode mencakup pembangkitan subkey (round key), proses Feistel sebanyak 16 ronde,
 - **Nama:** Ahmad Zaky Ash Shidqi  
 - **NRP:** 5025231229  
 - **Kelas:** Keamanan Informasi B  
-
-## Cara Menjalankan
-1. Jalankan file Python menggunakan terminal:
-   ```bash
-   python des_main.py
